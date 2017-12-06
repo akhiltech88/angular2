@@ -38,4 +38,33 @@ export class AppComponent  {
       this._product.getproducts()
       .subscribe(iproducts => this.iproducts = iproducts);
    }
+   /*
+   getData() {
+    return this.http.get('https://api-v3.mojepanstwo.pl/dane/wojewodztwa')
+        .map(response => response = response.json());
+}
+
+ngOnInit() {
+    this.appService.getData().subscribe(data => {
+        this.data = data;
+    });
+}
+
+OR
+
+headers: Headers = new Headers({ 'Something': 'Something' });
+
+getData() {
+    return this.http.get('https://api-v3.mojepanstwo.pl/dane/wojewodztwa', {
+        headers: this.headers
+    })
+        .map(response => response = response.json());
+}
+
+ngOnInit() {
+    this.appService.getData().subscribe(data => {
+        this.data = data;
+    });
+}
+   */
 }
